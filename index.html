@@ -2,25 +2,38 @@
 <html>
 
 <head>
+    <script src="script.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Zilla Slab' rel='stylesheet'>
-    <link rel="stylesheet" href="index.css">
+
     <title>Home</title>
     <meta name="description" content="Our first page">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
     <!-- Side navigation -->
-    <nav class="sidenav">
+
+    <nav class="sidenav" id="myScrollspy">
         <div class="block">
             <h1>JKAmbe</h1>
         </div>
+        <!-- 
 
-        <div class="block">
+        <nav class="block">
             <a href="#entry">Home</a>
             <a href="#aboutMe">About Me</a>
             <a href="#myWork">My Work</a>
             <a href="#">Links and contacts</a>
-        </div>
+        </nav> -->
+        <ul class="nav nav-pills nav-stacked block ">
+            <li class="active"> <a href="#entry">Home</a></li>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#myWork">My Work</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
     </nav>
 
     <!-- Page content -->
@@ -32,8 +45,8 @@
                     <h2>Software Developer, Interaction Designer,</h2>
                     <h2>aspiring Game Developer</h2>
                 </div>
-                <div class="group basePadding"><button type="button" class="button">MY WORK</button> <button
-                        type="button" class="button">CONTACT ME</button></div>
+                <div class="group basePadding"><button type="button" class="button" onclick="document.getElementById('myWork').scrollIntoView();">MY WORK</button> <button
+                        type="button" class="button" onclick="document.getElementById('contact').scrollIntoView();">CONTACT ME</button></div>
             </div>
         </div>
         <div class="centerBox" id="aboutMe">
@@ -74,9 +87,11 @@
                 <div>
                     <div class="game" id="nightmare-slayers">
                         <div class="itchioEmbed right">
-                            <iframe frameborder="0" src="https://itch.io/embed-upload/8001298?color=36003c"
-                                allowfullscreen="" width="960" height="660"><a
-                                    href="https://jkambe.itch.io/nightmare-slayers">Play Nightmare Slayers on
+                            <a href="https://itch.io/embed-upload/8099292?color=36003c" target="night"><button
+                                    type="button" onclick="style.display = 'none'" class="button bt2">PLAY</button></a>
+                            <iframe name="night" frameborder="0" src="about:blank" allowfullscreen="" width="960"
+                                height="660"><a href="https://jkambe.itch.io/nightmare-slayers">Play Nightmare Slayers
+                                    on
                                     itch.io</a></iframe>
                         </div>
                         <div class="list basePadding right">
@@ -89,11 +104,13 @@
                                 deserunt mollit anim id est laborum</span>
                         </div>
                     </div>
-                    
+
                     <div class="game" id="NewType Dodgeball">
                         <div class="itchioEmbed left">
-                            <iframe width="960" height="660"
-                                src="https://www.youtube.com/embed/videoseries?list=PLBuknCng-yvTXMmVVJzmeAVrfDJW6rLXI"
+                            <a href="https://www.youtube.com/embed/videoseries?list=PLBuknCng-yvTXMmVVJzmeAVrfDJW6rLXI" target="dodgeball"><button
+                                type="button" class="button bt2" onclick="style.display = 'none'">PLAY</button></a>
+                            <iframe width="960" height="660" name="dodgeball"
+                                src="about:blank"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>
@@ -112,8 +129,10 @@
 
                     <div class="game" id="Botany">
                         <div class="itchioEmbed right">
-                            <iframe frameborder="0" src="https://itch.io/embed-upload/5798365?color=1e1e1e"
-                                allowfullscreen="" width="960" height="660"><a
+                            <a href="https://itch.io/embed-upload/5798365?color=1e1e1e" target="botany"><button
+                                    type="button" class="button bt2" onclick="style.display = 'none'">PLAY</button></a>
+                            <iframe frameborder="0" src="about:blank" name="botany" allowfullscreen="" width="960"
+                                height="660"><a
                                     href="https://jkambe.itch.io/that-time-i-forgot-to-study-for-my-agricultural-assignment-7-times">Play
                                     That time I got reincarnated as a botanist and forgot to study for my botanical
                                     assignment (x7) on itch.io</a></iframe>
@@ -133,6 +152,23 @@
                 </div>
 
             </div>
+        </div>
+        <div class="centerBox" id="contact">
+            <div class="section" style="top: 35%;">
+                <h1 class="basePadding">Contact Me</h1>
+                <div class="group basePadding">
+                    <button type="button" class="button" onclick="window.open('https://github.com/JKAmbe', '_blank');">Github</button>
+                    <button type="button" class="button" onclick="window.open('https://jkambe.itch.io/', '_blank');">Itch.io</button>
+                    <button type="button" class="button" onclick="window.open('https://www.linkedin.com/in/jansen-chandra-8283001bb/', '_blank');">Linkedin</button>
+                </div>
+                <div class="group ">
+                    <button type="button" class="button" onclick="copy('Just_Ambe#8550')">Discord</button>
+                    <button type="button" class="button" onclick="window.open('mailto: jansen192002@gmail.com'); copy('jansen192002@gmail.com')">Email</button>
+                    
+                </div>
+
+            </div>
+        </div>
 </body>
 
 </html>
