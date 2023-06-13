@@ -165,7 +165,20 @@ img {
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 
+.bt2 {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
 
+.game .list {
+  width: 480px;
+}
+
+ul {
+  list-style-type: none;
+}
 
 h3 {
   width: 100%;
@@ -228,9 +241,7 @@ h3 span {
   height: 220vh;
 }
 
-ul {
-  list-style-type: none;
-}
+
 
 
 @media screen and (max-width: 1720px) {
