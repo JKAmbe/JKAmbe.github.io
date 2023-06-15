@@ -44,7 +44,9 @@ body {
 }
 
 .nav>li>a {
-  padding: 0px;
+  padding: 0 10px;
+  width: fit-content;
+  
 }
 
 h1 {
@@ -238,10 +240,19 @@ h3 span {
 }
 
 #myWork {
-  height: 220vh;
+  height: 240vh;
 }
 
+a{
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  transition-duration: 250ms;
+}
 
+a:hover{
+  color: white;
+  background-color: rgb(27, 27, 27);
+}
 
 
 @media screen and (max-width: 1720px) {

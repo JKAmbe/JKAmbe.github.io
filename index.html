@@ -13,21 +13,13 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+<body data-spy="scroll" data-target="#myScrollspy">
     <!-- Side navigation -->
 
     <nav class="sidenav" id="myScrollspy">
         <div class="block">
             <h1>JKAmbe</h1>
         </div>
-        <!-- 
-
-        <nav class="block">
-            <a href="#entry">Home</a>
-            <a href="#aboutMe">About Me</a>
-            <a href="#myWork">My Work</a>
-            <a href="#">Links and contacts</a>
-        </nav> -->
         <ul class="nav nav-pills nav-stacked block ">
             <li class="active"> <a href="#entry">Home</a></li>
             <li><a href="#aboutMe">About Me</a></li>
@@ -45,8 +37,10 @@
                     <h2>Software Developer, Interaction Designer,</h2>
                     <h2>aspiring Game Developer</h2>
                 </div>
-                <div class="group basePadding"><button type="button" class="button" onclick="document.getElementById('myWork').scrollIntoView();">MY WORK</button> <button
-                        type="button" class="button" onclick="document.getElementById('contact').scrollIntoView();">CONTACT ME</button></div>
+                <div class="group basePadding"><button type="button" class="button"
+                        onclick="document.getElementById('myWork').scrollIntoView();">MY WORK</button> <button
+                        type="button" class="button"
+                        onclick="document.getElementById('contact').scrollIntoView();">CONTACT ME</button></div>
             </div>
         </div>
         <div class="centerBox" id="aboutMe">
@@ -66,12 +60,12 @@
                     <div class="list basePadding">
                         <div class="paddingVert"> What can I do?</div>
                         <span class="list"> I can do a lot! Really! I'm a software developer first, so I'm comfortable
-                            with anything from C++, Java, phyton, and C#. I also have experience in javascript with
-                            libraries such as webXR and three.js, and many more!
+                            with anything from C++, Java, phyton, and C#. Game engine wise I've experimented with most
+                            of the easily available ones like Unity, Unreal, godot. I even dabble with stuff like vr,
+                            javascript, webXR!
                             Other than coding, as a student in Interaction design, I'm quite versed in UX and UI design,
-                            and as an (aspiring) game developer, I can also do 3d modelling, sounds, and animations!
-                            Lastly, I'm good at cooking! Like really, apparently making good soup is my most standout
-                            feature according to my flatmates, 😕.</span>
+                            and as an (aspiring) game developer, I can do 3d modelling, sounds, and animations!
+                            </span>
                     </div>
                     <div class="list basePadding">
                         <div class="paddingVert"> How do I contact you?</div>
@@ -96,34 +90,39 @@
                         </div>
                         <div class="list basePadding right">
                             <div class="paddingVert "> Nightmare Slayers</div>
-                            <span class="game desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                deserunt mollit anim id est laborum</span>
+                            <span class="game desc"> My most recent work! 
+                                It was a collaboration between me and 3 other game design students during my last semester at UTS and was showcased during the 2023 UTS tech fest.
+                                The pitch was to made a starfox 64 style of 2 axis shoot'em'up' but with multiple playable character and our own twist of style.
+                                <br><br>
+                                I played multiple role during the game's production. I managed tickets, programmed a LOT, and I even get to draw and model my own characters.
+                                A lot happened as always, getting burned out, personal issues, technical problems but we got there in the end and we're all VERY proud with how it turned out.
+                            </span>
                         </div>
                     </div>
 
                     <div class="game" id="NewType Dodgeball">
-                        <div class="itchioEmbed left">
-                            <a href="https://www.youtube.com/embed/videoseries?list=PLBuknCng-yvTXMmVVJzmeAVrfDJW6rLXI" target="dodgeball"><button
-                                type="button" class="button bt2" onclick="style.display = 'none'">PLAY</button></a>
-                            <iframe width="960" height="660" name="dodgeball"
-                                src="about:blank"
+                        <div class="itchioEmbed left"><a href="https://www.youtube.com/embed/videoseries?list=PLBuknCng-yvTXMmVVJzmeAVrfDJW6rLXI"
+                            target="dodgeball">
+                           <button type="button" class="button bt2"
+                                    onclick="style.display = 'none'">PLAY VIDEO</button></a>
+                            <iframe width="960" height="660" name="dodgeball" src="about:blank"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>
                         </div>
                         <div class="list basePadding left">
                             <div class="paddingVert ">Newtype Dodgeball</div>
-                            <span class="game desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                deserunt mollit anim id est laborum. It's not available for play at the moment, but you
-                                can check out the playlist to the side to see how I achieve it (12 videos)
+                            <span class="game desc">
+                                The pitch for this one is to make gundam style funnels in Unreal Engine and turn it into a multiplayer game.
+                                Bear in mind that this is the first time me and my teammate touched Unreal engine. This one is yet another collaborative work, this time with only one other student with me.
+                                We're allowed to do pretty much anything, both of us love gundams, and well we decided to go a bit overboard.
+                                <br><br>
+                                The result speaks for itself, REALLY proud of this one!
+                                It's not available for play at the moment, since we haven't figured out the logistic of deploying it. But I got a  <a href="https://www.youtube.com/embed/videoseries?list=PLBuknCng-yvTXMmVVJzmeAVrfDJW6rLXI"
+                                target="dodgeball"><b>playlist (12 videos)</b></a> here for the entire process, and a
+                                <a href="https://github.com/JKAmbe/FunnelAssessment" target="_blank"><b>github repo</b></a> to clone to be played in unreal editor
+                                
+                                </span>
                         </div>
                     </div>
 
@@ -140,31 +139,39 @@
                         <div class="list basePadding left">
                             <div class="paddingVert ">That time I got reincarnated as a botanist and forgot to study for
                                 my botanical assignment (x7)</div>
-                            <span class="game desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                deserunt mollit anim id est laborum</span>
+                            <span class="game desc"> This one got showcased for the 2022 UTS student games showcase. It was a collaboration between me and 5 other game design students.
+                                For this project, we have to work around a no violent restriction and follow a randomized theme.
+                                The pitch that we end up with was a point and click style puzzle game set in a magical world where you work as the botanist. 
+
+                                <br><br>
+                                We each got to do our own level, mines are the final and the tutorial. I got to do a LOT of the programming, and modelling for this one.
+                                I was the most  experienced member in the group, and I think it went quite well for my first real game
+
+                            </span>
                         </div>
                     </div>
-
+                    <h3><span>Contact Me</span></h3>
                 </div>
 
             </div>
         </div>
         <div class="centerBox" id="contact">
             <div class="section" style="top: 35%;">
+                
                 <h1 class="basePadding">Contact Me</h1>
                 <div class="group basePadding">
-                    <button type="button" class="button" onclick="window.open('https://github.com/JKAmbe', '_blank');">Github</button>
-                    <button type="button" class="button" onclick="window.open('https://jkambe.itch.io/', '_blank');">Itch.io</button>
-                    <button type="button" class="button" onclick="window.open('https://www.linkedin.com/in/jansen-chandra-8283001bb/', '_blank');">Linkedin</button>
+                    <button type="button" class="button"
+                        onclick="window.open('https://github.com/JKAmbe', '_blank');">Github</button>
+                    <button type="button" class="button"
+                        onclick="window.open('https://jkambe.itch.io/', '_blank');">Itch.io</button>
+                    <button type="button" class="button"
+                        onclick="window.open('https://www.linkedin.com/in/jansen-chandra-8283001bb/', '_blank');">Linkedin</button>
                 </div>
                 <div class="group ">
                     <button type="button" class="button" onclick="copy('Just_Ambe#8550')">Discord</button>
-                    <button type="button" class="button" onclick="window.open('mailto: jansen192002@gmail.com'); copy('jansen192002@gmail.com')">Email</button>
-                    
+                    <button type="button" class="button"
+                        onclick="window.open('mailto: jansen192002@gmail.com'); copy('jansen192002@gmail.com')">Email</button>
+
                 </div>
 
             </div>
