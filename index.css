@@ -387,13 +387,6 @@ iframe {
   }
 }
 @media (pointer:none), (pointer:coarse) {
-  .list {
-    font-size: 5vh;
-  }
-
-  .list span {
-    font-size: 2.5vh;
-  }
   #aboutMe{
     height: 100vh;
   }
