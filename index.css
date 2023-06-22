@@ -186,7 +186,7 @@ h3 {
   width: 100%;
   text-align: center;
   border-bottom: 1px solid rgb(140, 138, 138);
-  ;
+  height : 0px;
   line-height: 0.1em;
   margin: 30px 0 60px;
 }
@@ -267,24 +267,81 @@ iframe {
   height: 70vh;
   width: 47vw;
 }
+@media screen and (max-width: 1500px) {
 
-@media screen and (max-width: 600px) {
+  #aboutMe{
+    height: 130vh;
+  }
+
+  .right {
+    float: none;
+    text-align-last: center;
+    text-align: center;
+  }
+
+  .left {
+    float: none;
+    text-align-last: center;
+    text-align: center;
+  }
+
+  .game .list {
+    width: fit-content;
+  }
+
+  .game {
+    height: 100vh;
+  }
+  iframe {
+    height: 50vh;
+    width: 60vw;
+  }
+
+  .itchioEmbed {
+    position: relative;
+    height: 50vh;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #myWork {
+    height: 30vh;
+  }
+
+  #aboutMe .left{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  
+  #aboutMe .right{
+    width: 100%
+  }
+  .main {
+    padding-left: 220px;
+  }
+  .sidenav {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 1000px) {
+
   .sidenav {
     padding-top: 88%;
     width: 0px;
   }
 
   .sidenav a {
-    font-size: 105%;
+    font-size: 18px;
   }
 
   .list {
-    font-size: 105%;
+    font-size: 18px;
     text-align: center;
   }
 
   .list span {
-    font-size: 70%;
+    font-size: 12px;
   }
 
   .main {
@@ -321,7 +378,7 @@ iframe {
     width: 100vw;
   }
   #myWork {
-    height: 300vh;
+    height: 280vh;
   }
 
   #aboutMe .left{
