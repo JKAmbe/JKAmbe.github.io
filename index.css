@@ -210,7 +210,8 @@ h3 span {
 
 .itchioEmbed {
   position: relative;
-  width: 960px;
+  height: 50vh;
+  width: 47vw;
 }
 
 .right {
@@ -225,12 +226,12 @@ h3 span {
 .bt2 {
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 60%;
   transform: translate(-50%, -50%);
 }
 
 .game .list {
-  width: 480px;
+  width: 29vw;
 }
 
 .active>a {
@@ -254,23 +255,36 @@ a:hover{
   background-color: rgb(27, 27, 27);
 }
 
+#aboutMe .left{
+  width: 40%
+}
 
-@media screen and (max-width: 1720px) {
+#aboutMe .right{
+  width: 60%
+}
+
+iframe {
+  height: 70vh;
+  width: 47vw;
+}
+
+@media screen and (max-width: 600px) {
   .sidenav {
-    padding-top: 15px;
+    padding-top: 88%;
     width: 0px;
   }
 
   .sidenav a {
-    font-size: 18px;
+    font-size: 105%;
   }
 
   .list {
-    font-size: 18px;
+    font-size: 105%;
+    text-align: center;
   }
 
   .list span {
-    font-size: 12px;
+    font-size: 70%;
   }
 
   .main {
@@ -295,5 +309,28 @@ a:hover{
 
   .game {
     height: 90vh;
+  }
+  iframe {
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .itchioEmbed {
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+  }
+  #myWork {
+    height: 300vh;
+  }
+
+  #aboutMe .left{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  
+  #aboutMe .right{
+    width: 100%
   }
 }
