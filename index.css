@@ -386,3 +386,12 @@ iframe {
     width: 100%
   }
 }
+@media (pointer:none), (pointer:coarse) {
+  .list {
+    font-size: 5vh;
+  }
+
+  .list span {
+    font-size: 2.5vh;
+  }
+}
