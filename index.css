@@ -115,7 +115,7 @@ h2 {
 
 .centerBox {
   display: flex;
-  height: 100vh;
+  height: 1084px;
   position: relative;
   justify-content: center;
 }
@@ -206,7 +206,7 @@ h3 span {
 
 .itchioEmbed {
   position: relative;
-  height: 50vh;
+  height: 500px;
   width: 47vw;
 }
 
@@ -237,7 +237,7 @@ h3 span {
 }
 
 #myWork {
-  height: 250vh;
+  height: 2600px;
 }
 
 a{
@@ -260,14 +260,14 @@ a:hover{
 }
 
 iframe {
-  height: 70vh;
+  height: 700px;
   width: 47vw;
 }
 @media screen and (max-width: 1500px) {
 
   
   #aboutMe{
-    height: 150vh;
+    height: 1239px;
   }
 
   .right {
@@ -287,22 +287,22 @@ iframe {
   }
 
   .game {
-    height: 120vh;
+    height: 1200px;
   }
   iframe {
-    height: 50vh;
+    height: 500px;
     width: 60vw;
   }
 
   .itchioEmbed {
     position: relative;
-    height: 50vh;
+    height: 500px;
     width: 60vw;
     margin-left: auto;
     margin-right: auto;
   }
   #myWork {
-    height: 390vh;
+    height: 3900px;
   }
 
   #aboutMe .left{
@@ -360,20 +360,20 @@ iframe {
   }
 
   .game {
-    height: 100vh;
+    height: 1000px;
   }
   iframe {
-    height: 50vh;
+    height: 500px;
     width: 100vw;
   }
 
   .itchioEmbed {
     position: relative;
-    height: 50vh;
+    height: 500px;
     width: 100vw;
   }
   #myWork {
-    height: 300vh;
+    height: 3302px;
   }
 
   #aboutMe .left{
@@ -388,6 +388,6 @@ iframe {
 }
 @media (pointer:none), (pointer:coarse) {
   #aboutMe{
-    height: 100vh;
+    height: 1000px;
   }
 }
