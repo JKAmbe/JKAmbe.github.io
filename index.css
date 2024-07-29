@@ -321,6 +321,10 @@ iframe {
     width: 220px;
   }
  
+
+  .list {
+    font-size: 5vw;
+  }
 }
 @media screen and (max-width: 1000px) {
 
@@ -331,7 +335,7 @@ iframe {
 
 
   .list {
-    font-size: 5vw;
+    font-size: 2vw;
     text-align: center;
   }
 
