@@ -115,7 +115,7 @@ h2 {
 
 .centerBox {
   display: flex;
-  height: 1084px;
+  height: 650px;
   position: relative;
   justify-content: center;
 }
@@ -260,7 +260,7 @@ a:hover{
 }
 
 iframe {
-  height: 700px;
+  /* height: 400px; */
   width: 47vw;
 }
 @media screen and (max-width: 1500px) {
@@ -373,7 +373,7 @@ iframe {
 
   .itchioEmbed {
     position: relative;
-    height: 500px;
+    height: 700px;
     width: 100vw;
   }
   #myWork {
